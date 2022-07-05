@@ -1,0 +1,104 @@
+.header {
+    border-bottom: 2px solid #ECECEC;
+    background-color: #fff;
+}
+
+.header__container,
+.menu,
+.nav,
+.auth,
+.menu__item {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    position: relative;
+    justify-content: flex-start;
+    margin-right: 50px;
+
+&:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.menu,
+.auth {
+    @include font(500, 14px, 1.14, 0.02em);
+}
+
+.auth {
+    margin-left: auto;
+}
+
+.auth__item {
+    margin-right: 50px;
+
+&:last-child {
+    margin-right: 0;
+}
+}
+
+
+
+.auth__link,
+.menu__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+@include animation(color);
+
+&:hover,
+&:focus{
+        color: var(--accent-color);
+    }
+}
+
+.menu__link--current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+
+    
+}
+
+
+.auth__link {
+    text-decoration: none;
+    color: var(--common-text-color);
+
+&:last-child {
+    margin-right: 0;
+   }
+}
+
+
+
+.menu__link {
+    text-decoration: var(--accent-color);
+    color: var(--title-text-color);
+
+&:last-child {
+    margin-right: 0;
+}
+&.menu__link--current{
+    color: var(--accent-color);
+}
+
+}
+
+
+.auth__phone-icon,
+.auth__email-icon {
+    fill: currentColor;
+    margin-right: 10px;
+
+}
+
+

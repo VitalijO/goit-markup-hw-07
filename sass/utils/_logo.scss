@@ -1,0 +1,13 @@
+.logo {
+    margin-right: var(--typical-padding);
+    text-decoration: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+    color: var(--title-text-color);
+    font-style: normal;
+    
+@include font(700, 26px, 1.19, 0.03em);
+}
+
+.logo__first-part{
+    color: var(--accent-color);
+}

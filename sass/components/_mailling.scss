@@ -1,0 +1,49 @@
+.mailling {
+    margin-left: 93px;
+}
+
+.mailling__title{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+@include font(700, 14px, 1.14, 0.03em);
+}
+
+.mailling__form {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.mailling__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: var(--body-dark-color)
+}
+
+.mailling__input::placeholder {
+    background: var(--body-dark-color);
+    color: rgba(255, 255, 255, 0.6);
+@include font(400, 16px, 1.25, 0.03em);
+}
+
+
+.mailling__button {
+    text-align: center;
+@include font(700, 16px, 1.88, 0.06em);
+}
+
+.mailling__icon-send {
+    margin-left: 10px;
+}
